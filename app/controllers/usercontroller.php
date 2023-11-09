@@ -36,15 +36,15 @@ public function showUsers(){
     $users=$this->model->getUser();
     include '../views/user_list.php';
 }
-public function deleteUser($id){
-    if($this->model->deleteUser($id)){
-        echo "user delete successfully!";
-        header ('location :'.BASE_PATH);
-    }else{
-        echo "failed to delete user.";
-    }
+// public function deleteUser($id){
+//     if($this->model->deleteUser($id)){
+//         echo "user delete successfully!";
+//         header ('location :'.BASE_PATH);
+//     }else{
+//         echo "failed to delete user.";
+//     }
 
-}
+// }
 public function updateUser($id){
     if($_SERVER['REQUEST_METHOD'=== 'POST']){
         $username=$_POST['username'];
