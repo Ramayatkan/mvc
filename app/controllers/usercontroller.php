@@ -71,6 +71,7 @@ public function searchUsers($searchTerm){
     $users=$this->model->searchUsers($searchTerm);
     include '../views/user_list.php';
 }
+// /hello every one
 public function showSearchedUsers($searchTerm){
     $users=$this->model->searchUsers($searchTerm);
     includen'../views/user_list.php';
